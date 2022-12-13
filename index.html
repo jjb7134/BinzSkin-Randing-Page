@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜딩 페이지</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <div class="header">
+        <p class="mainText"><span class="headerFirMent">Binz Skin</span>의 가족이 되어주세요~!</br>
+            1달 내에 <span class="headerSecMent">꿀피부</span>로 만들어드릴게요</p>
+    </div>
+    <!-- 컨텐츠 -->
+        <div style="width: 100%;">
+            <!-- 사진 -->
+            <div class="imgWrap"><img class="img" src="img/cream.png"></div>
+            <!-- 설명 -->
+            
+            <div class="discriptions">
+                <p class="firstMent">아토베리아 피부장벽</br>
+                    예민보습 로션 기획 세트</p>
+                <p class="secondMent">피부 장벽 강화로 어려지는 피부</p>
+                <button class="infoBtn" onclick="showAlert()">제품 상세 정보</button>
+                <p class="thirdMent">업체 인기순위<br/>
+                    압도적인 보습력으로<br/>
+                    피부장벽을 튼튼하게 만드는<br/>
+                    로션과 크림 패키지</p>
+                <button class="kakaoBtn btnblock" onclick="showAlert()">카카오 계정으로 꿀피부 되러가기</button>
+                <button class="finalBtn btnblock" onclick="showAlert()">꿀피부 되러가기</button>
+            </div>
+        </div>
+        
+
+<!-- JS -->
+<script>
+    const showAlert = (e) => {
+        alert('꿀피부 되부런누')
+    }
+</script>
+</body>
+</html>
