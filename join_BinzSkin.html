@@ -8,9 +8,20 @@
     <title>Join</title>
 
     <!-- css -->
-    <style>
-        .div {
+    <style type="text/css">
+        div,
+        p {
             margin: 0px;
+        }
+
+        .input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 6vh;
+            background: #e2dada24;
+            box-shadow: inset 20px 20px 12px white;
+            border-radius: 4px;
+            border: 0.1px solid gray;
         }
 
         body {
@@ -22,9 +33,13 @@
         }
 
         .formWrap {
+            height: 85%;
+        }
+
+        .form {
             margin: 72px auto;
             width: 570px;
-            height: 660px;
+            height: 100%;
             background: #FFFFFF;
             box-shadow: 0px 3px 10px #00000029;
             border-radius: 18px;
@@ -36,46 +51,84 @@
         }
 
         .title {
-            font: bold 35px Segoe UI;
+            padding: 3% 2% 5%;
+            font: bold 3em Segoe UI;
             letter-spacing: 0px;
             color: #707070;
-            width: 168px;
+            width: auto;
             height: 47px;
         }
 
-        .name {}
+        .nameLabel {
+            display: inline-block;
+            width: 27.5%;
+        }
+
+        .name {
+            margin: 7% auto 1%;
+            float: left;
+            font: bold 1.5em Segoe UI;
+            color: #707070;
+        }
+
+        .infoNameLabel {
+            display: inline-block;
+            width: 55%;
+        }
+
+
+        .anotherInput {
+            width: 100%;
+        }
+
+        .buttonWrap {
+            margin: 10% auto 0px;
+            width: 20%;
+            height: 6%;
+        }
+
+        .button {
+            width: 100%;
+            height: 100%;
+            background: #9FD7FC 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+            font: bold 1.25em Segoe UI;
+            color: #7D808C;
+            cursor: pointer;
+            border-style: none;
+        }
     </style>
 </head>
 
 <body>
-    <div>
-        <form class="formWrap">
+    <div class="formWrap">
+        <form class="form">
             <!-- 회원가입 -->
-            <div class="titlewrap">
-                <label for="" class="title">회 원 가 입</label>
-            </div>
+            <p for="" class="title">회 원 가 입</p>
+            <!-- <div class="titlewrap">
+            </div> -->
             <!-- 성 -->
-            <div class="a">
-                <label class="firstNameLabel name" for="">성</label><br>
-                <input class="firstNameInput" type="text" />
+            <div class="nameLabel">
+                <label class="firstNameLabel  name" for="">성</label><br>
+                <input class="firstNameInput input" type="text" />
             </div>
             <!-- 이름 -->
-            <div class="a">
-                <label class="lastNameLabel name" for="">이름</label><br>
-                <input class="lastNameInput" type="text" />
+            <div class="nameLabel">
+                <label class="lastNameLabel  name" for="">이름</label><br>
+                <input class="lastNameInput input" type="text" />
             </div>
             <!-- 이메일 -->
-            <div class="a">
+            <div class="infoNameLabel">
                 <label class="emailLabel name" for="">이메일</label><br>
-                <input class="emailInput" type="text" />
+                <input class="emailInput anotherInput input" type="text" />
             </div>
             <!-- 비밀번호 -->
-            <div class="a">
+            <div class="infoNameLabel">
                 <label class="passwordLabel name" for="">비밀번호</label><br>
-                <input class="passwordInput" type="text" />
+                <input class="passwordInput anotherInput input" type="text" />
             </div>
             <!-- 버튼 -->
-            <div class="a">
+            <div class="buttonWrap">
                 <input class="button" type="button" value="가 입" />
             </div>
         </form>
