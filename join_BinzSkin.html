@@ -1,3 +1,15 @@
+<!-- AMPscript -->
+%%[
+InsertData(
+"BinzSkin_JB",
+"FirstName",RequestParameter("firstname"),
+"LastName",RequestParameter("lastname"),
+"Email",RequestParameter("email"),
+"Password",RequestParameter("password")
+)
+]%%
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +114,7 @@
 
 <body>
     <div class="formWrap">
-        <form class="form">
+        <form class="form" action="%%=RequestParameter('PAGEURL')=%%" method="post">
             <!-- 회원가입 -->
             <p for="" class="title">회 원 가 입</p>
             <!-- <div class="titlewrap">
@@ -110,26 +122,26 @@
             <!-- 성 -->
             <div class="nameLabel">
                 <label class="firstNameLabel  name" for="">성</label><br>
-                <input class="firstNameInput input" type="text" />
+                <input class="firstNameInput input" type="text" name="firstname" />
             </div>
             <!-- 이름 -->
             <div class="nameLabel">
                 <label class="lastNameLabel  name" for="">이름</label><br>
-                <input class="lastNameInput input" type="text" />
+                <input class="lastNameInput input" type="text" name="lastname" />
             </div>
             <!-- 이메일 -->
             <div class="infoNameLabel">
                 <label class="emailLabel name" for="">이메일</label><br>
-                <input class="emailInput anotherInput input" type="text" />
+                <input class="emailInput anotherInput input" type="text" name="email" />
             </div>
             <!-- 비밀번호 -->
             <div class="infoNameLabel">
                 <label class="passwordLabel name" for="">비밀번호</label><br>
-                <input class="passwordInput anotherInput input" type="text" />
+                <input class="passwordInput anotherInput input" type="text" name="password" />
             </div>
             <!-- 버튼 -->
             <div class="buttonWrap">
-                <input class="button" type="button" value="가 입" />
+                <input class="button" type="submit" value="가 입" />
             </div>
         </form>
     </div>
